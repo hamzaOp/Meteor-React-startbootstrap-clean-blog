@@ -10,7 +10,7 @@ Nav = React.createClass({
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                 </button>
-                <a className="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a className="navbar-brand" href="">Start Bootstrap</a>
             </div>
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

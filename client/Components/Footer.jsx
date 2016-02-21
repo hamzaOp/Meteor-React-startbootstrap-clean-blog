@@ -6,7 +6,7 @@ Footer = React.createClass({
                 <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul className="list-inline text-center">
                         <li>
-                            <a href="#">
+                            <a href="">
                                 <span className="fa-stack fa-lg">
                                     <i className="fa fa-circle fa-stack-2x"></i>
                                     <i className="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -14,7 +14,7 @@ Footer = React.createClass({
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="">
                                 <span className="fa-stack fa-lg">
                                     <i className="fa fa-circle fa-stack-2x"></i>
                                     <i className="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -22,7 +22,7 @@ Footer = React.createClass({
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="">
                                 <span className="fa-stack fa-lg">
                                     <i className="fa fa-circle fa-stack-2x"></i>
                                     <i className="fa fa-github fa-stack-1x fa-inverse"></i>
