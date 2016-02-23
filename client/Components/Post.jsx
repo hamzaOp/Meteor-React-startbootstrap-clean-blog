@@ -1,7 +1,10 @@
 Post = React.createClass({
     render(){
+
+        var params = {'id' : this.props.id}
+        var path = FlowRouter.path('/posts/:id', params);
         return (<div className="post-preview">
-                    <a href="">
+                    <a href={path}>
                         <h2 className="post-title">
                             {this.props.title}
                         </h2>
