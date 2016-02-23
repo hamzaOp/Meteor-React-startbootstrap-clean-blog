@@ -9,3 +9,17 @@ FlowRouter.route('/', {
         });
     }
 });
+
+FlowRouter.route('/posts/:id', {
+
+
+
+    action: function(params, queryParams) {
+        ReactLayout.render(App,{
+            navigation : <Nav />,
+            header : <Header sub={true} />,
+          content : <PostContent />,
+            footer : <Footer />
+        });
+    }
+});
