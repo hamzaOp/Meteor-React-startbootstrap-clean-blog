@@ -4,7 +4,11 @@ Meteor-react theme for personal blogging
 [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/)
 # How to install
 `$ meteor run`
-#This theme uses **Meteor 1.2.1**
+
+This theme uses **Meteor 1.2.1**
+
+#Live demo
+[meteor-react-blog](http://react-blog.meteor.com/)
 
 
 
