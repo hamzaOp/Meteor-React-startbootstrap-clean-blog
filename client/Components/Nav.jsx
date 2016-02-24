@@ -1,5 +1,16 @@
 Nav = React.createClass({
+
+  currentRoute(route){
+  FlowRouter.watchPathChange();
+  return FlowRouter.current().route.name === route ? 'active' : '';
+  },
+
     render(){
+      
+      var home = FlowRouter.path('/');
+      var about = FlowRouter.path('/about');
+      var contact = FlowRouter.path('/contact');
+
         return (<nav className="navbar navbar-default navbar-custom navbar-fixed-top">
         <div className="container-fluid">
 
@@ -15,17 +26,14 @@ Nav = React.createClass({
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="">Home</a>
+                    <li className={this.currentRoute('home')}>
+                        <a href={home}>Home</a>
                     </li>
-                    <li>
-                        <a href="">About</a>
+                    <li className={this.currentRoute('about')}>
+                        <a href={about}>About</a>
                     </li>
-                    <li>
-                        <a href="">Sample Post</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
+                    <li className={this.currentRoute('contact')}>
+                        <a href={contact}>Contact</a>
                     </li>
                 </ul>
             </div>
