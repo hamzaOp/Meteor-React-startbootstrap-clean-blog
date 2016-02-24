@@ -20,6 +20,6 @@ HeaderData = React.createClass({
       let title = this.data.post.map((post) => {
         return post.title;
       });
-        return (<Header sub={true} heading={title} subHeading={author}/>);
+        return (<Header sub={true} heading={title} subHeading={author} bg='home'/>);
     }
 })

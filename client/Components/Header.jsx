@@ -1,8 +1,8 @@
 Header = React.createClass({
     render(){
-
+        var bg = 'url("/'+this.props.bg+'.jpg")';
         let headerStyle = {
-            backgroundImage : "url('/home.jpg')"
+            backgroundImage : bg
         };
         return (<header className="intro-header" style={headerStyle}>
         <div className="container">

@@ -4,7 +4,7 @@ FlowRouter.route('/', {
     action: function(params, queryParams) {
         ReactLayout.render(App,{
             navigation : <Nav />,
-            header : <Header sub={false} heading='Clean Blog' subHeading='Start Bootstrap.' />,
+          header : <Header sub={false} heading='Clean Blog' subHeading='Start Bootstrap.' bg='home' />,
           content: <Wrapper />,
             footer : <Footer />
         });
@@ -31,7 +31,7 @@ FlowRouter.route('/about', {
     action: function(params, queryParams) {
         ReactLayout.render(App,{
             navigation : <Nav />,
-          header : <Header sub={false} heading='About me' subHeading='This is what I do.' />,
+          header : <Header sub={false} heading='About me' subHeading='This is what I do.' bg='about' />,
           content : <About />,
             footer : <Footer />
         });
@@ -44,7 +44,7 @@ FlowRouter.route('/contact', {
     action: function(params, queryParams) {
         ReactLayout.render(App,{
             navigation : <Nav />,
-          header : <Header sub={false} heading='Contact me' subHeading='Have questions? I have answers (maybe).' />,
+          header : <Header sub={false} heading='Contact me' subHeading='Have questions? I have answers (maybe).' bg='contact' />,
         content : <Contact />,
             footer : <Footer />
         });
