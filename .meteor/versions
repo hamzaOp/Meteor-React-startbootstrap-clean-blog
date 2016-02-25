@@ -38,6 +38,7 @@ kadira:react-layout@1.5.3
 launch-screen@1.0.4
 livedata@1.0.15
 logging@1.0.8
+markoshust:material-ui@0.14.2
 meteor@1.1.10
 meteor-base@1.0.1
 minifiers@1.1.7
