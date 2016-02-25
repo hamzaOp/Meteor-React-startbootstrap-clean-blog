@@ -5,7 +5,9 @@ FlowRouter.route('/', {
         ReactLayout.render(App,{
             navigation : <Nav />,
           header : <Header sub={false} heading='Clean Blog' subHeading='Hamza' bg='home' />,
-          content: <Wrapper />,
+          content() {
+        return <Wrapper />;
+      },
             footer : <Footer />
         });
     }
@@ -19,7 +21,9 @@ FlowRouter.route('/posts/:id', {
         ReactLayout.render(App,{
             navigation : <Nav />,
           header : <HeaderData />,
-          content : <PostContent />,
+          content() {
+        return <PostContent />;
+      },
             footer : <Footer />
         });
     }
@@ -32,7 +36,9 @@ FlowRouter.route('/about', {
         ReactLayout.render(App,{
             navigation : <Nav />,
           header : <Header sub={false} heading='About me' subHeading='This is what I do.' bg='about' />,
-          content : <About />,
+          content() {
+        return <About />;
+      },
             footer : <Footer />
         });
     }
@@ -45,7 +51,9 @@ FlowRouter.route('/contact', {
         ReactLayout.render(App,{
             navigation : <Nav />,
           header : <Header sub={false} heading='Contact me' subHeading='Have questions? I have answers (maybe).' bg='contact' />,
-        content : <Contact />,
+          content() {
+        return <Contact />;
+      },
             footer : <Footer />
         });
     }

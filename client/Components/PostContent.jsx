@@ -1,3 +1,7 @@
+const {
+  CircularProgress
+} = mui;
+
 PostContent = React.createClass({
 
   mixins: [ReactMeteorData],
@@ -7,6 +11,7 @@ PostContent = React.createClass({
     var Id = FlowRouter.getParam('id');
     var subscription = Meteor.subscribe('post', Id);
       return {
+        loading : !subscription.ready(),
         post: PostsCollection.find({
           _id: Id
         }).fetch()
@@ -15,14 +20,27 @@ PostContent = React.createClass({
     },
 
     render(){
-
+      if(this.data.loading){
+        let progress = {
+          margin : "auto",
+          position : "absolute",
+          top : "0",
+          bottom : "0",
+          right : "0",
+          left : "0"
+        };
+        return <CircularProgress size={1} style={progress} />;
+      }
       let post = this.data.post.map((post) => {
         return post.postText;
       });
+      let divStyle = {
+        marginLeft : "0"
+      }
         return (
           <article>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><p>{post}</p></div></div></div></article>);
+              <div className="container">
+                  <div className="row">
+                      <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style={divStyle}><p>{post}</p></div></div></div></article>);
     }
 })

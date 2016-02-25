@@ -25,13 +25,17 @@ Wrapper = React.createClass({
   getMeteorData() {
     var subscription = Meteor.subscribe('posts',this.state.counter);
       return {
+        loading : !subscription.ready(),
         posts: PostsCollection.find({},{}).fetch()
       };
 
     },
 
   render(){
-    return <Content posts={this.data.posts} callbacks={{Next: this.Next,Prev: this.Prev}} counter={this.state.counter} /> ;
+    let content = {
+      position : "relative"
+    };
+    return <Content style={content} loading={this.data.loading} posts={this.data.posts} callbacks={{Next: this.Next,Prev: this.Prev}} counter={this.state.counter} /> ;
   }
 
 })
