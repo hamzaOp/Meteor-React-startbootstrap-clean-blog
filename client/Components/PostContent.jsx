@@ -22,12 +22,10 @@ PostContent = React.createClass({
     render(){
       if(this.data.loading){
         let progress = {
-          margin : "auto",
-          position : "absolute",
-          top : "0",
-          bottom : "0",
-          right : "0",
-          left : "0"
+          marginLeft : "350",
+          marginRight : "350",
+          marginTop : "80",
+          marginBottom : "80"
         };
         return <CircularProgress size={1} style={progress} />;
       }
