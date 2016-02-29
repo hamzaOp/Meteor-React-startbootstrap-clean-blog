@@ -22,12 +22,12 @@ PostContent = React.createClass({
     render(){
       if(this.data.loading){
         let progress = {
-          marginLeft : "350",
-          marginRight : "350",
-          marginTop : "80",
-          marginBottom : "80"
-        };
-        return <CircularProgress size={1} style={progress} />;
+        marginLeft : "45%",
+        marginRight : "45%",
+        marginTop : "10%",
+        marginBottom : "30%"
+      };
+        return <CircularProgress color={"#DE4F4F"} size={1} style={progress} />;
       }
       let post = this.data.post.map((post) => {
         return post.postText;
