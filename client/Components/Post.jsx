@@ -1,5 +1,12 @@
 Post = React.createClass({
+
+  componentDidMount(){
+  $(".post-title").fitText(1.8,{ minFontSize: '15px', maxFontSize: '36px' });
+},
+
+
     render(){
+
 
         var params = {'id' : this.props.id}
         var path = FlowRouter.path('/posts/:id', params);
