@@ -8,11 +8,11 @@ Content = React.createClass({
 
       if(this.props.loading){
         let progress = {
-          marginLeft : "350",
-          marginRight : "350",
-          marginTop : "50",
-          marginBottom : "50"
-        };
+        marginLeft : "45%",
+        marginRight : "45%",
+        marginTop : "15%",
+        marginBottom : "30%"
+      };
         return (<div><Pager callbacks={this.props.callbacks} counter={this.props.counter} /><CircularProgress size={1} style={progress} /></div>);
       }
       let posts = this.props.posts.map((post) => {
