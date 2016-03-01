@@ -16,7 +16,7 @@ Post = React.createClass({
                             {this.props.title}
                         </h2>
                     </a>
-                    <p className="post-meta">Posted by <a href="">{this.props.author}</a> on 2016</p>
+                    <p className="post-meta">Posted by <a href="">{this.props.author}</a> on {this.props.date}</p>
                 <hr/>
                 </div>
                 );

@@ -24,7 +24,7 @@ Contact = React.createClass({
           }
         }
         var email = $("#email").val();
-        var name = 'Message from' + $("#name").val();
+        var name = 'Message from ' + $("#name").val();
         var message = $("#message").val();
         Meteor.call('sendEmail',
             'your email',

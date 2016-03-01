@@ -4,7 +4,7 @@ FlowRouter.route('/', {
     action: function(params, queryParams) {
         ReactLayout.render(App,{
             navigation : <Nav />,
-          header : <Header sub={false} heading='Clean Blog' subHeading='Hamza' bg='home' />,
+          header : <Header sub={false} heading='Clean Blog' subHeading='Description' bg='home' />,
           content() {
         return <Wrapper />;
       },

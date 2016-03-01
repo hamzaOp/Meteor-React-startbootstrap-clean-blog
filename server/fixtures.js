@@ -5,7 +5,7 @@ Meteor.startup(function () {
       author: faker.name.findName(),
       title : faker.lorem.sentence(),
       subTitle : faker.lorem.sentence() ,
-      date : faker.date.between(2015,2016),
+      date : faker.date.recent(),
       postText: faker.lorem.paragraph(),
     });
         }
