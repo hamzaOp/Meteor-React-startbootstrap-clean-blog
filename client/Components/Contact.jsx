@@ -30,7 +30,7 @@ Contact = React.createClass({
             'your email',
              email,
             name,
-            message,function (error, result) { if(!error){Bert.alert( 'Your email was sent !', 'success', 'growl-top-right' ); }
+            message,function (error, result) { if(!error){Bert.alert( 'Your email was sent successfully !', 'success', 'growl-top-right' ); }
 
             else{Bert.alert( 'Internal server error !', 'danger', 'growl-top-right' );}});
        $("#form")[0].reset();
