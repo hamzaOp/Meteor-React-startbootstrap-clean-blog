@@ -27,7 +27,7 @@ Contact = React.createClass({
         var name = 'Message from ' + $("#name").val();
         var message = $("#message").val();
         Meteor.call('sendEmail',
-            'your email',
+            'your email', //add here your contact email
              email,
             name,
             message,function (error, result) { if(!error){Bert.alert( 'Your email was sent successfully !', 'success', 'growl-top-right' ); }
