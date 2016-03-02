@@ -3,7 +3,7 @@ Meteor-react theme for personal blogging
 # Theme credit
 [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/)
 # How to install
-In order to be able to receive and send emails , you have to configure an smtp server :
+If you want to be able to receive and send emails , you have to configure an smtp server :
 
     Meteor.startup(function () {
     smtp = {
